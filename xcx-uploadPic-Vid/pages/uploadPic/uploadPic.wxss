@@ -1,0 +1,19 @@
+/* pages/uploadPic/uploadPic.wxss */
+.the-tit{ width: 100%; height: 50rpx; padding: 0 20rpx;  box-sizing: border-box; font-size: 28rpx; color: #f00; margin-top: 20rpx;}
+.share-pics{ width: 100%; height: 120rpx; padding: 0 20rpx; box-sizing: border-box; overflow-y:hidden; overflow-x: auto; margin-top: 20rpx;}
+.share-pics .pics{ float: left;}
+.share-pics .slug-cons{ width: 200%;}
+.share-pics .pics .tp{ width: 120rpx; height:120rpx;  border-radius: 10rpx; overflow: hidden; float: left;
+ margin-right: 10px; position: relative;  }
+.share-pics .pics .tp .img{ width: 100%; height: 100%;}
+.share-pics .pics .tp .delbtn{ width: 40rpx; height: 40rpx; line-height: 40rpx;
+position: absolute; top: 0; right: 0;  z-index: 2;
+background-color: rgba(0, 0, 0, .4); color: #fff; font-size: 22rpx; text-align: center;}
+.share-pics .pics .tp .progress{ width: 100%; height: 30rpx; line-height: 30rpx; color: #fff; font-size: 20rpx; z-index: 3; background-color: rgba(0, 0, 0, .4); position: absolute; left: 0; bottom: 0; text-align: center; }
+.share-pics .btn{ width: 120rpx; height: 120rpx; border-radius: 10rpx; float: left;
+ border: 1px solid #a7a7a7; box-sizing: border-box; position: relative;}
+.share-pics .btn::after{ content: ""; width: 80rpx; height: 80rpx; 
+background-repeat: no-repeat; background-size:cover;
+ background-image:url('https://7830-x01-a0804c-1258524456.tcb.qcloud.la/icons/add-pic-btn.png');
+ position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);}
+ 

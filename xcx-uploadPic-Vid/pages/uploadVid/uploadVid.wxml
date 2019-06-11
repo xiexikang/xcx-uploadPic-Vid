@@ -1,0 +1,13 @@
+<!--pages/uploadVid/uploadVid.wxml-->
+<view class='the-tit'>上传视频：</view>
+<view class='share-vids'>
+  <view class='add-btn'  wx:if="{{upFilesBtn}}" data-type="video"  bindtap='uploadFiles'></view>
+  <view class='videos'>
+    <block  wx:for="{{upVideoArr}}" wx:for-item="v" wx:key="k">
+      <view class='vid'>
+        <video class='video' src="{{v.tempFilePath}}" controls='{{controls}}' poster='{{v.thumbTempFilePath}}'></video>
+      </view>
+      <view class='delbtn' data-index="{{index}}" data-type="video" bindtap='delFile'>删除</view>
+    </block>
+  </view>
+</view>

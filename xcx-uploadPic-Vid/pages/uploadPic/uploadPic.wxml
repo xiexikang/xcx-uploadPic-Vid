@@ -1,0 +1,13 @@
+<!--pages/uploadPic/uploadPic.wxml-->
+<view class='the-tit'>上传图片：</view>
+<view class='share-pics'>
+  <view class='slug-cons'>
+    <view class='pics'>
+      <view class='tp' wx:for="{{upImgArr}}" wx:key="item">
+          <image mode='aspectFill' class='img' src='{{item.path}}' data-presrc="{{item.path}}" bindtap='previewImg' />
+          <view class='delbtn' data-index="{{index}}" data-type="image" bindtap='delFile'>X</view>
+      </view>
+    </view>
+    <view class='btn' wx:if="{{upFilesBtn}}"  data-type="image" bindtap='uploadFiles'></view>
+  </view>
+</view>
