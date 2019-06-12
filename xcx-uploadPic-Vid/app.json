@@ -1,6 +1,5 @@
 {
-  "pages": [
-      
+  "pages": [  
     "pages/uploadPic/uploadPic",
     "pages/uploadVid/uploadVid",
     "pages/index/index",
